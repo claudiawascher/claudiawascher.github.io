@@ -1,1 +1,1 @@
-Source code to my private research website, [claudiawascher.github.io](https://claudiawascher.github.io){:target="_blank"}
+Source code to my private research website, [claudiawascher.github.io](https://claudiawascher.github.io) {:target="_blank"}
