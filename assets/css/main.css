@@ -5,12 +5,11 @@
 	Customised templates Miniport and Escape Velocity, provided by html5up.net
 	under the Creative Commons Attribution 3.0 Unported (CC BY 3.0) license.
 	
-	colour palette: 
-	teal blue #546E7A
-	dark yellow #DBA507
-	cream white #f2f2f2
-	anthracite #292929
-
+	colour palette: https://coolors.co/visualizer/f2f2f2-067755-a9e190-292929
+	background off-white #f2f2f2
+	link text dark green #067755
+	link highlight light green #a9e190
+	nav/footer anthracite #292929
 */
 
 html, body, div, span, applet, object,
@@ -42,7 +41,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	background-color: #f2f2f2;
+	background-color:#f2f2f2;
 }
 
 ol, ul {
@@ -112,7 +111,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Exo 2';
 		line-height: 1.85em;
-		color:  #f2f2f2;
+		color:  #ffffff;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -122,13 +121,12 @@ input, select, textarea {
 		-webkit-transition: color .1s ease-in-out;
 		-ms-transition: color .1s ease-in-out;
 		transition: color .1s ease-in-out;
-		color: #546E7A;
-		text-decoration: underline #DBA507;
-		font-weight: 800;
+		color: #067755;
+		text-decoration: underline #A9E190;
 	}
 
 		a:hover {
-			color: #DBA507;
+			color: #A9E190; /* teal #5ec2b7;*/
 		}
 
 	b, strong {
@@ -184,7 +182,7 @@ input, select, textarea {
 	h5 {
 	    font-size: 1.1em;
 		font-weight: bold;
-		color: #546E7A;
+		color: #067755;
 		margin: 0.3 0 0.3em 0;
 	}
 
@@ -320,7 +318,7 @@ input, select, textarea {
 	width: 100%;
 	height: auto;
     overflow: hidden;
-	border: 0.25em solid #292929; /* blue border: #546E7A dark border: #292929 */
+	border: 0.25em solid #292929;
   }
 
 	.image {
@@ -373,42 +371,38 @@ table {
 
 .icon-container {
     margin: auto;
-    width: 80%;
     display: inline-block;
-    text-align: middle;
     padding: 5px;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .icon {
 	font-family: 'Font Awesome 5 Free';
-	font-style: normal;
-	font-variant: normal;
-	color:#546E7A;
-	line-height: 1;
 	font-size: 1.3em;
-	line-height: inherit;
 	text-decoration: none;
-	text-rendering: auto;
+	color: #067755;
 	margin: 0.2em;
 }
 
-.icon.brands:before {
-	font-family: 'Font Awesome 5 Brands';
+	.icon.brands:before {
+		font-family: 'Font Awesome 5 Brands';
+	}
+
+.custom-bluesky-icon-butterfly {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: transparent;
+	margin: 0.2em;
 }
 
-.custom-bluesky-icon {
-	color: #546E7A;
-	width: 1em;
-	height: 1em;
-	border-radius: 0.25em;
-	background: linear-gradient(to bottom, #546E7A, #9dacb3);
-	display: inline-block;
-}
+	.custom-bluesky-icon-butterfly-svg:hover {
+		fill: #A9E190;
+	}
 
-.custom-bluesky-icon:hover {
-    color: #DBA507;
-	background: linear-gradient(to bottom, #DBA507, #f1cc84);
-}
 
 /* Wrappers */
 
@@ -418,13 +412,13 @@ table {
 	}
 
 		.wrapper.style1 {
-			background-color: #f2f2f2; 
-			color: #3f3f3f; /* font colour */
+			background-color: #f2f2f2;
+			color: #292929; /* font colour */
 		}
 
 		.wrapper.style2 {
 			background-color: #292929;
-			color: #fff;  /* font colour */
+			color: #f2f2f2;  /* font colour */
 			width: 100%;
 			max-width: 100%;
 
@@ -443,6 +437,7 @@ table {
 
 	#nav {
 		background-color: #292929;
+		color: #f2f2f2;
 		font-family: 'Exo 2';
 		text-align: center;
 		position: fixed;
